@@ -21,9 +21,9 @@ As requested by the SVM [@scalingSVM], the features were scaled accordingly to t
 # Results
 
 For evaluating classifiers performances, we plotted their relative *confusion matrix*. Regarding SVM, we computed the *mean absolute error* as an indicator for its accuracy in the prediction for training and testing set and inspect an eventual overfitting. Since `mae` prediction values are comparable for both training and testing set, we end up with non-overfit status. For the DNN, we used 500 epochs to train our model, we tried to give the model the largest amount possible of epochs to increase accuracy evaluation, but keeping it safe from overfitting; to prevent overfitting, we decided to include also 2 dropout layers in between the input layers; also, the batch size for testing is 128, not so high in comparison with the amount of data put in the network, so we've tried to keep the model safe from memory overworking. Final results are pretty convincent, obtaining a high grade of accuracy, around 92%.
-![6_coeff_25_fullDataset_NoZeroCoeff_Scaled](images\6_coeff_0.25_fullDataset_Nozerocoeff_Scaled.png)
+![6_coeff_25_fullDataset_NoZeroCoeff_Scaled](https://github.com/Cocii/CMLS_HW1/blob/master/images/6_coeff_0.25_fullDataset_Nozerocoeff_Scaled.png)
 
-![13_coeff_25_fullDataset_NoZeroCoeff_Scaled](images\13_coeff_0.25_fulldataset_noZeroCoeff_Scaled.png)
+![13_coeff_25_fullDataset_NoZeroCoeff_Scaled](https://github.com/Cocii/CMLS_HW1/blob/master/images/13_coeff_0.25_fulldataset_noZeroCoeff_Scaled.png)
 
 ![13coeff_5_fullDataset_NoZeroCoeff_Scaled](images\13_coeff_0.25_halfDataset_NoZeroCoeff_Scaled.png)
 
