@@ -21,15 +21,15 @@ As requested by the SVM [@scalingSVM], the features were scaled accordingly to t
 # Results
 
 For evaluating classifiers performances, we plotted their relative *confusion matrix*. Regarding SVM, we computed the *mean absolute error* as an indicator for its accuracy in the prediction for training and testing set and inspect an eventual overfitting. Since `mae` prediction values are comparable for both training and testing set, we end up with non-overfit status. For the DNN, we used 500 epochs to train our model, we tried to give the model the largest amount possible of epochs to increase accuracy evaluation, but keeping it safe from overfitting; to prevent overfitting, we decided to include also 2 dropout layers in between the input layers; also, the batch size for testing is 128, not so high in comparison with the amount of data put in the network, so we've tried to keep the model safe from memory overworking. Final results are pretty convincent, obtaining a high grade of accuracy, around 92%.
-![13 coeff, size data=0.25, full Dataset, No zero coeff. scaled](images\6_coeff_0.25_fullDataset_Nozerocoeff_Scaled.png)
+![6_coeff_0.25_fullDataset_NoZeroCoeff_Scaled](images\6_coeff_0.25_fullDataset_Nozerocoeff_Scaled.png)
 
-![13 coeff, size data=0.25, full Dataset, No zero coeff. scaled](images\13_coeff_0.25_fulldataset_noZeroCoeff_Scaled.png)
+![13_coeff_0.25_fullDataset_NoZeroCoeff_Scaled](images\13_coeff_0.25_fulldataset_noZeroCoeff_Scaled.png)
 
-![13 coeff, size data=0.5, full Dataset, No zero coeff. scaled](images\13_coeff_0.25_halfDataset_NoZeroCoeff_Scaled.png)
+![13coeff_0.5_fullDataset_NoZeroCoeff_Scaled](images\13_coeff_0.25_halfDataset_NoZeroCoeff_Scaled.png)
 
-![13 coeff, size data=0.5, full Dataset, No zero coeff. scaled](images\13_coeff_0.5_fullDataset_NoZeroCoeff_Scaled.png)
+![13_coeff_0.5_fullDataset_NoZeroCoeff_Scaled](images\13_coeff_0.5_fullDataset_NoZeroCoeff_Scaled.png)
 
-![Confusion Matrix of DNN model](images\13_coeff_0.5_HalfDataset_NoZeroCoeff_Scaled.png)
+![13_coeff_0.5_helfDataset_NoZeroCoeff_Scaled](images\13_coeff_0.5_HalfDataset_NoZeroCoeff_Scaled.png)
 
 ![Confusion Matrix of DNN model](images\confusionMatrix_DNN_0.25.png)
 # Re-tuning SVM parameters
