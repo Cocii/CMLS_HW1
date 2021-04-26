@@ -43,7 +43,7 @@ Finally, some plots! Since with SVM we worked in 13-dimensional feature space, i
 
 ![Maximum Margin](images\Discriminant.png)
 
-![Maximum Margin](images\Schermata 2021-04-25 alle 23.27.53.png)
+![MaximumMargin](images\Schermata 2021-04-25 alle 23.27.53.png)
 
 # Conclusions
 
