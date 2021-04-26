@@ -35,16 +35,16 @@ For evaluating classifiers performances, we plotted their relative *confusion ma
 ![Confusion Matrix of DNN model](https://github.com/Cocii/CMLS_HW1/blob/master/images/confusionMatrix_DNN_0.25.png)
 # Re-tuning SVM parameters
 
-The classification results were already quite good, but we tried to further optimize SVM parameters for enhancing the predictions. We used *grid search cross validation* for searching through a set of SVM main parameters, and thus we ended up with new optimal values for both `gamma` and `c` parameters different to the default ones, namely we end up with 'gamma0' = 0.01 and 'c' = 10. Even if the final, optimized *confusion matrix* was not so different from the previous results, indeed we limited the `mae` of classifier's predictions.
+The classification results were already quite good, but we tried to further optimize SVM parameters for enhancing the predictions. We used *grid search cross validation* for searching through a set of SVM main parameters, and thus we ended up with new optimal values for both `gamma` and `c` parameters different to the default ones, namely we end up with `gamma` = 0.01 and `c` = 10. Even if the final, optimized *confusion matrix* was not so different from the previous results, indeed we limited the `mae` of classifier's predictions.
 
 # Principal Component Analysis
 
 Finally, some plots! Since with SVM we worked in 13-dimensional feature space, it was quite hard up to this point to actually \"see\" SVM classification and MFCC's weight in the prediction. Thanks to *Principal Component Analysis*, we end up with an approximation in two dimensions of the feature space. Indeed, PCA is an analysis technique which 'drains' from the N-dimensional feature space a set of N variables, the *n-th PCs*, which are computed as linear combination of the features in the N space by fitting the lines which best fit the feature set. We've computed the *scree plot* in order to look at the meaningfulness of the first two *PCA* components in describing our feature space. Lastly, we look at the 'discriminant power' of the MFCC coefficients in building up the fist *Principal Component*, thus the*first, ninth, eigth, third, fifth and twelwe-th* mfcc were the most important in discerning the digit.
 
 
-![Maximum Margin](images\Discriminant.png)
+![Maximum Margin](https://github.com/Cocii/CMLS_HW1/blob/master/images/Discriminant%20.png)
 
-![MaximumMargin](images\Schermata 2021-04-25 alle 23.27.53.png)
+![MaximumMargin](https://github.com/Cocii/CMLS_HW1/blob/master/images/Schermata%202021-04-25%20alle%2023.27.53.png)
 
 # Conclusions
 
