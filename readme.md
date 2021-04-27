@@ -23,7 +23,7 @@ As requested by the SVM [@scalingSVM], the features were scaled accordingly to t
 For evaluating classifiers performances, we plotted their relative *confusion matrix*. Regarding SVM, we computed the *mean absolute error* as an indicator for its accuracy in the prediction for training and testing set and inspect an eventual overfitting. Since `mae` prediction values are comparable for both training and testing set, we end up with non-overfit status. For the DNN, we used 500 epochs to train our model, we tried to give the model the largest amount possible of epochs to increase accuracy evaluation, but keeping it safe from overfitting; to prevent overfitting, we decided to include also 2 dropout layers in between the input layers; also, the batch size for testing is 128, not so high in comparison with the amount of data put in the network, so we've tried to keep the model safe from memory overworking. Final results are pretty convincent, obtaining a high grade of accuracy, around 92%.
 
 <img src="https://github.com/Cocii/CMLS_HW1/blob/master/images/MatrixSVM_non_opt.png" width="400"  alt="Confusion Matrix of SVM"/><br/>
-<img src="https://github.com/Cocii/CMLS_HW1/blob/master/images/confusionMatrix_DNN_0.25.png" width="360"  alt="Confusion Matrix of DNN model"/><br/>
+<img src="https://github.com/Cocii/CMLS_HW1/blob/master/images/confusionMatrix_DNN_0.25.png" width="340"  alt="Confusion Matrix of DNN model"/><br/>
 # Re-tuning SVM parameters
 
 The classification results were already quite good, but we tried to further optimize SVM parameters for enhancing the predictions. We used *grid search cross validation* for searching through a set of SVM main parameters, and thus we ended up with new optimal values for both `gamma` and `c` parameters different to the default ones, namely we end up with `gamma` = 0.01 and `c` = 10. Even if the final, optimized *confusion matrix* was not so different from the previous results, indeed we limited the `mae` of classifier's predictions.
@@ -33,7 +33,7 @@ The classification results were already quite good, but we tried to further opti
 Finally, some plots! Since with SVM we worked in 13-dimensional feature space, it was quite hard up to this point to actually \"see\" SVM classification and MFCC's weight in the prediction. Thanks to *Principal Component Analysis*, we end up with an approximation in two dimensions of the feature space. Indeed, PCA is an analysis technique which 'drains' from the N-dimensional feature space a set of N variables, the *n-th PCs*, which are computed as linear combination of the features in the N space by fitting the lines which best fit the feature set. We've computed the *scree plot* in order to look at the meaningfulness of the first two *PCA* components in describing our feature space. Lastly, we look at the 'discriminant power' of the MFCC coefficients in building up the fist *Principal Component*, thus the*first, ninth, eigth, third, fifth and twelwe-th* mfcc were the most important in discerning the digit.
 
 <img src="https://github.com/Cocii/CMLS_HW1/blob/master/images/Discriminant%20.png" width="400"  alt="Maximum Margin"/><br/>
-<img src="https://github.com/Cocii/CMLS_HW1/blob/master/images/Schermata%202021-04-25%20alle%2023.27.53.png" width="420"  alt="MaximumMargin"/><br/>
+<img src="https://github.com/Cocii/CMLS_HW1/blob/master/images/Schermata%202021-04-25%20alle%2023.27.53.png" width="410"  alt="MaximumMargin"/><br/>
 
 # Conclusions
 
