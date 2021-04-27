@@ -22,10 +22,10 @@ As requested by the SVM [@scalingSVM], the features were scaled accordingly to t
 
 For evaluating classifiers performances, we plotted their relative *confusion matrix*. Regarding SVM, we computed the *mean absolute error* as an indicator for its accuracy in the prediction for training and testing set and inspect an eventual overfitting. Since `mae` prediction values are comparable for both training and testing set, we end up with non-overfit status. For the DNN, we used 500 epochs to train our model, we tried to give the model the largest amount possible of epochs to increase accuracy evaluation, but keeping it safe from overfitting; to prevent overfitting, we decided to include also 2 dropout layers in between the input layers; also, the batch size for testing is 128, not so high in comparison with the amount of data put in the network, so we've tried to keep the model safe from memory overworking. Final results are pretty convincent, obtaining a high grade of accuracy, around 92%.
 
-![Confusion Matrix of SVM](https://github.com/Cocii/CMLS_HW1/blob/master/images/MatrixSVM_non_opt.png)
+![Confusion Matrix of SVM](https://github.com/Cocii/CMLS_HW1/blob/master/images/MatrixSVM_non_opt.png){:class="img-responsive"}
 
 
-![Confusion Matrix of DNN model](https://github.com/Cocii/CMLS_HW1/blob/master/images/confusionMatrix_DNN_0.25.png)
+![Confusion Matrix of DNN model](https://github.com/Cocii/CMLS_HW1/blob/master/images/confusionMatrix_DNN_0.25.png){:class="img-responsive"}
 # Re-tuning SVM parameters
 
 The classification results were already quite good, but we tried to further optimize SVM parameters for enhancing the predictions. We used *grid search cross validation* for searching through a set of SVM main parameters, and thus we ended up with new optimal values for both `gamma` and `c` parameters different to the default ones, namely we end up with `gamma` = 0.01 and `c` = 10. Even if the final, optimized *confusion matrix* was not so different from the previous results, indeed we limited the `mae` of classifier's predictions.
