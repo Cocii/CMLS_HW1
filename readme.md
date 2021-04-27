@@ -39,10 +39,6 @@ Finally, some plots! Since with SVM we worked in 13-dimensional feature space, i
 
 We implemented two very popular algorithms of machine learning, namely Support Vector Machine and Deep Neural Network, in order to predict which digit is pronounced in a short audio excerpt. The results are encouraging for both the models, with accuracy rates that overcome the 90%, thus confirming the popularity in speech recognition tasks of both the models and the features used along this project.
 
-
-![Confusion_Matrix_of_SVM_opti-mized](https://github.com/Cocii/CMLS_HW1/blob/master/images/MatrixSVM_opt.png)
 <img src="https://github.com/Cocii/CMLS_HW1/blob/master/images/MatrixSVM_opt.png" width="400"  alt="Confusion_Matrix_of_SVM_opti-mized"/><br/>
-![DNN model best loss](images/loss0.25.png)
 <img src="https://github.com/Cocii/CMLS_HW1/blob/master/images/loss0.25.png" width="400"  alt="DNN model best loss"/><br/>
-![DNN model best accuracy](images/accuracy0.25.png)
 <img src="https://github.com/Cocii/CMLS_HW1/blob/master/images/accuracy0.25.png" width="400"  alt="DNN model best accuracy"/><br/>
