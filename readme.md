@@ -22,15 +22,8 @@ As requested by the SVM [@scalingSVM], the features were scaled accordingly to t
 
 For evaluating classifiers performances, we plotted their relative *confusion matrix*. Regarding SVM, we computed the *mean absolute error* as an indicator for its accuracy in the prediction for training and testing set and inspect an eventual overfitting. Since `mae` prediction values are comparable for both training and testing set, we end up with non-overfit status. For the DNN, we used 500 epochs to train our model, we tried to give the model the largest amount possible of epochs to increase accuracy evaluation, but keeping it safe from overfitting; to prevent overfitting, we decided to include also 2 dropout layers in between the input layers; also, the batch size for testing is 128, not so high in comparison with the amount of data put in the network, so we've tried to keep the model safe from memory overworking. Final results are pretty convincent, obtaining a high grade of accuracy, around 92%.
 
-![6_coeff_25_fullDataset_NoZeroCoeff_Scaled](https://github.com/Cocii/CMLS_HW1/blob/master/images/6_coeff_0.25_fullDataset_Nozerocoeff_Scaled.png)
+![Confusion Matrix of SVM](https://github.com/Cocii/CMLS_HW1/blob/master/images/MatrixSVM_non_opt.png)
 
-![13_coeff_25_fullDataset_NoZeroCoeff_Scaled](https://github.com/Cocii/CMLS_HW1/blob/master/images/13_coeff_0.25_fulldataset_noZeroCoeff_Scaled.png)
-
-![13coeff_5_fullDataset_NoZeroCoeff_Scaled](https://github.com/Cocii/CMLS_HW1/blob/master/images/13_coeff_0.25_halfDataset_NoZeroCoeff_Scaled.png)
-
-![13_coeff_5_fullDataset_NoZeroCoeff_Scaled](https://github.com/Cocii/CMLS_HW1/blob/master/images/13_coeff_0.5_fullDataset_NoZeroCoeff_Scaled.png)
-
-![13_coeff_5_helfDataset_NoZeroCoeff_Scaled](https://github.com/Cocii/CMLS_HW1/blob/master/images/13_coeff_0.5_HalfDataset_NoZeroCoeff_Scaled.png)
 
 ![Confusion Matrix of DNN model](https://github.com/Cocii/CMLS_HW1/blob/master/images/confusionMatrix_DNN_0.25.png)
 # Re-tuning SVM parameters
@@ -50,10 +43,9 @@ Finally, some plots! Since with SVM we worked in 13-dimensional feature space, i
 
 We implemented two very popular algorithms of machine learning, namely Support Vector Machine and Deep Neural Network, in order to predict which digit is pronounced in a short audio excerpt. The results are encouraging for both the models, with accuracy rates that overcome the 90%, thus confirming the popularity in speech recognition tasks of both the models and the features used along this project.
 
-![DNN model best accuracy](images/conf1.png)
 
-![DNN model best accuracy](images/conf2.png)
+![Confusion_Matrix_of_SVM_opti-mized](https://github.com/Cocii/CMLS_HW1/blob/master/images/MatrixSVM_opt.png)
 
-![DNN model best accuracy](images/loss0.25.png)
+![DNN model best loss](images/loss0.25.png)
 
 ![DNN model best accuracy](images/accuracy0.25.png)
